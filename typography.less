@@ -1,0 +1,83 @@
+/**
+* Anax Flat theme.
+*/
+
+@import url(modules.less);
+
+
+/** --------------------------------------------------------------
+ *  Style header
+ */
+
+
+//button larger
+
+// .rm-max .rm-small .rm-button {
+//     font-size: 2em;
+// }
+
+@maxButtonFontSize: 2em;
+
+//navbar style
+
+// .rm-desktop li {
+//     background-color: #d5d2d5;
+// }
+
+@fontFamilyHeadings:  @fontFamilyLobster;
+@fontFamilyBody:      @fontFamilyLobster;
+@fontFamilyCode:      @fontFamilyLobster;
+
+
+@navbarItemBgColor: #d5d2d5;
+
+/** --------------------------------------------------------------
+ *  responsiv design
+ */
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    .logo-1 {
+        top: 100px;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .site-logo-text {
+        .column(3);
+    }
+
+    .navbar2 {
+        .column(8);
+     }
+}
+
+@media screen and (max-width: 560px) {
+    .navbar2 {
+        display: none;
+    }
+
+    .site-logo-text {
+        .column(12);
+    }
+
+    .rm-max.rm-navbar {
+       .column(12);
+   }
+}
+
+ @media screen and (max-width: 700px) {
+     .footer-column {
+        width: 100%;
+    }
+}

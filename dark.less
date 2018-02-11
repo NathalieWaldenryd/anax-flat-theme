@@ -1,0 +1,99 @@
+/**
+* Anax Flat theme.
+*/
+
+@import url(modules.less);
+
+
+/** --------------------------------------------------------------
+ *  Style header
+ */
+
+
+//button larger
+
+// .rm-max .rm-small .rm-button {
+//     font-size: 2em;
+// }
+
+@maxButtonFontSize: 2em;
+
+//navbar style
+
+// .rm-desktop li {
+//     background-color: #d5d2d5;
+// }
+@navbarItemBgColor: #1b051b;
+
+
+/** --------------------------------------------------------------
+ *  responsiv design
+ */
+img {
+    max-width: 100%;
+}
+
+html {
+    background-color: #170417;
+    color: #939696;
+}
+
+.breadcrumb-wrap, .footer-column, .row {
+    background-color: #0d020c;
+}
+
+a, a:visited {
+    color: #142155;
+}
+
+a:hover {
+    color: #5460e9;
+}
+
+.rm-desktop li a:hover{
+    background-color: #0b020b;
+    color: #5460e9;
+}
+
+@media screen and (max-width: 1400px) {
+    .logo-1 {
+        top: 100px;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .site-logo-text {
+        .column(3);
+    }
+
+    .navbar2 {
+        .column(8);
+     }
+}
+
+@media screen and (max-width: 560px) {
+    .navbar2 {
+        display: none;
+    }
+
+    .site-logo-text {
+        .column(12);
+    }
+
+    .rm-max.rm-navbar {
+       .column(12);
+   }
+}
+
+ @media screen and (max-width: 700px) {
+     .footer-column {
+        width: 100%;
+    }
+}
